@@ -1,10 +1,29 @@
 body{
   margin: 0px;
   overflow-x: hidden;
+  color: black;
+}
+*{
+  margin: 0%;
+  font-family: 'Work Sans', sans-serif;
+}
+.firstDesignDiv{
+  height: 1200px;
+  width: 1200px;
+  background-color: #4CAF50;
+  position: absolute;
+  border-radius: 750px;
+  left: 50%;
+  top: 110px;
+  opacity: 0.3;
+}
+.firstDesignDiv2{
+  left: -60%;
+  top: -90%;
+  background-color: #EE6983;
 }
 
-
-/* navbar */
+/* //////////////////////////////////////////////////////////////////////navbar////////////////////////////////////////////////// */
 .navbar {
   background-color: #f4f6f8;
   display: flex;
@@ -13,6 +32,7 @@ body{
   justify-content: flex-end;
   height: 100px;
 }
+
 
 .navelements {
   font-family: sans-serif;
@@ -27,79 +47,74 @@ body{
 }
 
 .navelements:hover {
-  opacity: 0.7;
+  font-weight: 900;
+}
+.introductionName{
+  font-size: 40px;
+}
+.introductionGreet{
+  font-weight: 100;
 }
 
-/* intropage */
-.introduction {
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////heading page//////////////////////////////////////////////// */
+
+.headingPage{
   background-color: #f4f6f8;
   display: flex;
   flex-direction: row;
-  margin-bottom: 5rem;
-}
-
-.introductionImage {
-  margin-left: 15%;
-  padding-top: 4%;
+  align-items: center;
+  gap: 15%;
+  justify-content: center;
+  margin-left: -75px;
+  height: 90vh;
 }
 .imgmm{
-  height: 520px;
-  width: 520px;
+  height: 550px;
+  width: 550px;
 }
-
-.introductionGreeting {
+.introduction{
+  margin-top: -70px;
   display: flex;
   flex-direction: column;
-  margin-left: 14%;
+  gap: 40px;
 }
-
-
-.socialMediaIcons {
-  position: relative;
-  right: 2.5%;
+.socialMediaIcons{
   height: 1.8rem;
   width: 1.8rem;
-  padding-right: 7%;
-  padding-top: 5%;
-  opacity: 0.5;
-  padding-bottom: 18%;
+  opacity: 0.7;
+  transition: 0.3s;
 }
-#main{
-  padding-top: 50%;
-}
-
-.socialMediaIcons:hover {
+.socialMediaIcons:hover{
   opacity: 1;
+  transform: scale(1.4);
 }
-
-.introductionButton {
-  position: relative;
-  top: 18%;
-  right: 4%;
+.socialicon{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: -10px;
+}
+.button{
   background-color: #4CAF50;
-  border-radius: 25px;
-  border-color: transparent;
+  border: none;
   color: white;
-  padding: 5% 9%;
+  padding: 15px 32px;
   text-align: center;
-  display: inline-block;
-  font-size: 1rem;
+  font-size: 16px;
 }
-
-.introductionButton:hover {
-  background-color: green;
+.introductionButton{
+  margin-top: 30px;
+  position: absolute;
 }
-
-.introductionName {
-  font-family: 'Work Sans', sans-serif;
-  margin-top: 0;
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.introductionGreet {
-  font-size: 25px;
-  font-family: 'Roboto', sans-serif
+.button:hover{
+  background-color: #f4f6f8;
+  color: black;
+  border:  solid #4CAF50;
+  box-shadow: -5px -5px #4CAF50;
 }
 
 
@@ -110,20 +125,14 @@ body{
 
 
 
+/* ////////////////////////////////////////////////////////////////////////////////////////about me//////////////////////////////////////// */
 
-
-
-
-
-
-
-
-/* about */
 .about {
   text-align: center;
-  background-color: black;
+  background-color:black ;
   color: white;
   height: 100vh;
+  position: relative;
 }
 
 .photoCard{
@@ -152,333 +161,160 @@ body{
 .aboutCardimage:hover{
   transform: scale(1.1);
 }
+.headingID{
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.05cm;
+  padding-top: 40px;
+  font-size: 50px;
+  color: #f4f6f8;
+}
 
 
 
 
 
 
+/* ///////////////////////////////////////////////////////////////////////skills/////////////////////////////////////// */
 
-
-
-
-
-
-/* skills */
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.skill{
   height: 100vh;
-  color: white;
+  width: 100vw;
   background-color: black;
-}
-.skillStructure{
+  color: white;
   text-align: center;
-  position: relative;
-  left: 5%;
-  padding-top: 5%;
-
 }
-.skillsElements1 {
-  position: relative;
-  display: flex;
-  padding-top: 10%;
-  padding-bottom: 20%;
-  flex-direction: row;
-  transition: transform 1.5s;
-}
-
-.skillsElements2 {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  transition: transform 1.5s;
-}
-
-.skillImages {
+.skillImages{
   height: 80px;
   width: 80px;
-  padding-right:100px;
-}
-.skillImages1{
-  padding-right: 110px;
-}
-
-.skillImagesName {
-  font-family: 'Work Sans', sans-serif;
-  padding-right: 100px;
-  color: white;
-
-}
-.dic{
-  text-decoration: none;
-  transition: transform 0.4s;
+  transition: 0.3s;
 }
 .dic:hover{
-  transform: scale(1.2);
-  filter: invert(100%);
-}
-.dic:hover .skillImagesName{
-  filter: invert(100%);
-
+  transform: scale(1.4);
 }
 
-
-
-
-/* projects */
-
-
-
-.projects {
-  text-align: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
-
-.projectCard{
+.skillsGrid{
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr ;
+  grid-template-rows: 0.1fr 0.1fr;
   align-items: center;
   justify-content: center;
-  margin-left: 10%;
-  display: flex;
-  flex-direction: row;
-  height: 80%;
-  width: 80%;
-
+  column-gap: 150px;
+  row-gap: 150px;
+  padding-bottom: 150px;
 }
-.projectCardStructure{
-  display: flex;
-  flex-direction: column;
-  height: 60%;
-  width: 33%;
-  background-color: #f4f6f8;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 12px;
-  color: white;
-  align-items: center;
+.dic{
+  transition: 0.3s;
 }
-.projectCardStructure:hover {
-  box-shadow: 10px 10px 40px #565050;
-}
-.playButton{
-  background-color: white;
-  border-radius: 25px;
-  border-color: transparent;
-  width: 65%;
-  padding: 3px 0px;
-  color: black;
-  text-align: center;
-  display: inline-block;
-  font-size: 1rem;
-}
-.prop{
-  font-size: 1rem;
-  padding-top: 40%;
-}
-.playButton:hover{
-  box-shadow: 2px 2px 20px black;
-  background-color: black;
-  color: white;
-}
-
-.backim{
-  background-image: url("/images/proimg.png");
-  box-shadow: -5px -5px 50px #191919;
-}
-.projimg{
-  padding-top: 20%;
-  height: 50%;
-  width: 75%;
-
-}
-.rps{
-  transform: scale(1.4);
-  position: relative;
-  left: -30%;
-  transition: transform 1s;
-}
-
-.hangman{
-  position: relative;
-  left: 15%;
-  transition: transform 0.2s;
-  filter: grayscale(0.90);
-}
-.sc:hover{
-  transform: translateX(5%) scale(1.2);
-  filter: grayscale(0);
-}
-.rps:hover{
-  filter: grayscale(0);
-}
-
-.hhhh{
-  position: relative;
-  left: 27%;
-  filter: grayscale(0.90);
-  transition: transform 0.2s;
-
-}
-
-
-
-
-
-
-
-
-/* contactme */
-
-
-
-
-
-
-
-
-
-
-
-
-.contactme {
-
-  text-align: center;
-  height: 100vh;
-}
-
-.contactBlack{
-  position: relative;
-  bottom: 110px;
-  left: 65%;
-  height: 102vh;
-  width: 39vw;
-  background-color: black;
-
-}
-.contactCardWhite{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  height: 60%;
-  width: 25%;
-  left: 60%;
-  top: 10%;
-  background-color: white;
-  box-shadow: 10px 0px 30px #888888;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transition: transform 0.2s;
-}
-.contactCardBlack{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 60%;
-  width: 45%;
-  left: 15%;
-  bottom: 50%;
-  color: white;
-  background-color: black;
-  box-shadow: -10px -0px 30px black;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  transition: transform 0.2s;
-
-}
-.contactCardBlack:hover{
-  transform: scale(1.02);
-}
-.contactCardBlack:hover .contactCardWhite{
-
-}
-.contactCardWhite:hover{
-  transform: scale(1.02);
-}
-
- .contactCardImages{
-  height: 30px;
-  width: 30px;
-}
-.pad{
-  padding-top: 30px;
-  font-size: 15px;
-  font-weight: bold;
-}
-.contactCardNames{
-    font-family: 'Roboto', sans-serif;
-}
-.mes{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-}
-.mesElements{
-  padding-left: 5%;
-}
-.formsDiv{
-  display: flex;
-  flex-direction: column;
-    align-items: center;
-}
-.forms{
-  width: 75%;
-  padding: 12px 20px;
-  margin: 1.5% 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
-}
-textarea{
-  height: 100px;
-  font-family: 'Work Sans', sans-serif;
-}
-.butt{
-  text-align: left;
-  padding-top: 1%;
-  padding-left: 12%;
-  padding-bottom: 0px;
-}
-.submitButton{
-  background-color: #4CAF50;
-  color: white;
-  padding: 13px 28px;
-  text-align: center;
+a{
   text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-  border-color: black;
-  font-size: 16px;
+  color: white;
+}
+.skillImagesName{
+  padding-top: 30px;
+}
+
+
+
+
+
+
+/* ///////////////////////////////////////////////projects////////////////////////////////////////// */
+
+
+
+
+
+.projects{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////contactaME///////////////////////////////////////////////// */
+.contactme{
+  padding-top: 10px;
+  color:black;
+  background-color: #f4f6f8;
+  height: 70vh;
+  width: 100vw;
+}
+.headingIDW{
+  color: black;
+  padding-bottom: 50px;
+}
+.contactCardImages{
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.contactElements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.emailInput{
+  width: 300px;
+  height: 50px;
+  background-color: #f4f6f8;
+  border: solid #4CAF50;
+}
+
+
+
+
+/* ///////////////////////////footer/////////////// */
+
+.footer{
+  padding-top: 20px;
+  color: black;
+  height: 100px;
+  background-color: #f4f6f8;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 30vh;
+  width: 100vw;
+}
+.f1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .social{
-  filter: invert(100%);
-}
-.smic{
-  right: 0px;
-  height: 1.3rem;
-  width: 1.3rem;
-}
-.final{
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  height: 75px;
-  background-color: black;
-  color: white;
+  gap: 60px;
+  background-color: #f4f6f8;
 }
-.contactandskill{
-  font-family: 'Work Sans', sans-serif;
-  font-size: 50px;
+.sendButton{
+  position: relative;
 }
-.nee{
-  font-size: 25px;
+.endDesignDiv{
+  height: 10px;
+  width: 1200px;
+  background-color: #4CAF50;
+  position:absolute;
+  left: 30%;
+  top: 405%;
+  border-radius: 720px;
+  opacity: 0.3;
+}
+.endDesignDiv2{
+  background-color: #EE6983;
+  left: -10%;
+  top: 370%;
 }
