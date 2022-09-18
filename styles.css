@@ -16,6 +16,7 @@ body{
   left: 50%;
   top: 110px;
   opacity: 0.3;
+
 }
 .firstDesignDiv2{
   left: -60%;
@@ -38,6 +39,7 @@ body{
   font-family: sans-serif;
   padding-left: 2rem;
   padding-right: 3rem;
+  z-index: 10;
 }
 .navelementsStyle{
   text-decoration: none;
@@ -81,12 +83,15 @@ body{
   display: flex;
   flex-direction: column;
   gap: 40px;
+  /* z-index: 10; */
 }
 .socialMediaIcons{
   height: 1.8rem;
   width: 1.8rem;
   opacity: 0.7;
   transition: 0.3s;
+  position: relative;
+  z-index: 300;
 }
 .socialMediaIcons:hover{
   opacity: 1;
@@ -133,6 +138,7 @@ body{
   color: white;
   height: 100vh;
   position: relative;
+  z-index: 10;
 }
 
 .photoCard{
@@ -182,14 +188,17 @@ body{
   background-color: black;
   color: white;
   text-align: center;
+  position: relative;
+  z-index: 200;
 }
 .skillImages{
   height: 80px;
   width: 80px;
   transition: 0.3s;
 }
-.dic:hover{
+.skillImages:hover{
   transform: scale(1.4);
+  filter: invert();
 }
 
 .skillsGrid{
@@ -243,6 +252,7 @@ a{
 
 /* ////////////////////////////////////////////////////contactaME///////////////////////////////////////////////// */
 .contactme{
+  position: relative;
   padding-top: 10px;
   color:black;
   background-color: #f4f6f8;
@@ -261,9 +271,12 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   gap: 30px;
   font-size: 20px;
   font-weight: 800;
+  z-index: 200;
+  background-color: transparent;
 }
 .emailInput{
   width: 300px;
@@ -304,17 +317,29 @@ a{
   position: relative;
 }
 .endDesignDiv{
-  height: 10px;
-  width: 1200px;
-  background-color: #4CAF50;
+  height: 1000px;
+  width: 1000px;
   position:absolute;
-  left: 30%;
-  top: 405%;
-  border-radius: 720px;
+  border-radius: 1500px;
   opacity: 0.3;
+  z-index: 100;
+}
+.endDesignDiv1{
+  background-color: #EE6983;
+  right: -350px;
+  top: 400px;
 }
 .endDesignDiv2{
-  background-color: #EE6983;
-  left: -10%;
-  top: 370%;
+  background-color: #4CAF50;
+  right: 1200px;
+  bottom: 200px;
+}
+.introductionButton{
+  transition: 0.3s;
+}
+.introductionButton:hover{
+  transform: scale(1.4);
+}
+.lastPage{
+  overflow: hidden;
 }
