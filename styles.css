@@ -334,12 +334,7 @@ a{
   right: 1200px;
   bottom: 200px;
 }
-.introductionButton{
-  transition: 0.3s;
-}
-.introductionButton:hover{
-  transform: scale(1.4);
-}
+
 .lastPage{
   overflow: hidden;
 }
